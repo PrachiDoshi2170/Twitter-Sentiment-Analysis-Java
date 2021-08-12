@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+html {
+	scroll-behavior: smooth;
+	background: linear-gradient(rgba(255,255,255,.5), rgba(0,0,0,.5)), url("https://techcrunch.com/wp-content/uploads/2018/07/fake-twitter-accounts.png?w=730&crop=1");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: fixed;
+	min-height: 100%;
+	font-family:'Montserrat', san-serif;
+}
+
+#top {
+	position: fixed;
+	width: 100%;
+	background: #99ddff;
+	top: 0;
+	left: 0;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+#top h1 {
+	color: white;
+}
+
+#top form {
+	display: inline;
+}
+
+#key {
+	font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    margin-right: 10px;
+    width: 350px;
+    min-height: 20px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+.formbtn {
+	font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 120px;
+    min-height: 18px;
+    border-radius: 0;
+    border: 0;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+	background: white;
+	border: 1px solid #00acee;
+	color: #00acee
+}
+
+input[type="submit"]:hover {
+	background: #00acee;
+	color: white;
+}
+
+#stop {
+	min-height: 20px;
+	background: #ff1a1a;
+	color: white;
+}
+
+#stop:disabled {
+	opacity: 0.4;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+}
+
+.tweets-container {
+	width: 75%;
+	margin-right: 25%;
+	margin-left: 50px;
+	margin-top: 130px;
+	overflow-y: hidden;
+	padding: 15px;
+}
+
+.tweet {
+	display: none;
+	padding: 20px;
+	margin: 20px 0;
+	border-radius: 7px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	font-size: 14px;
+	line-height: 1.5;
+	background: rgba(255, 255, 255, 0.7);
+	color: white;
+	font-weight: 600;
+}
+
+#empty {
+	color: white;
+	font-weight: 600;
+}
+
+.chart-container {
+	width: 22%;
+	text-align: center;
+	position: fixed;
+	margin-top: 150px;
+	color: white;
+}
+
+.one, .two {
+	background: rgba(255, 255, 255, 0.5);
+	padding: 5px;
+	font-weight: 600;
+}
+
+.two {
+	font-size: 14px;
+	margin-top: 15px;
+	padding: 10px;
+}
+
+@media screen and (max-width: 992px) {
+	.chart-container {
+		width: 27%;
+	}
+	.tweets-container {
+		width: 72%;
+		margin-right: 28%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.chart-container {
+		width: 40%;
+		margin-top: 70px;
+	}
+	.tweets-container {
+		width: 100%;
+		margin-right: 0%;
+		margin-top: 60%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.chart-container {
+		width: 60%;
+	}
+	.tweets-container {
+		margin-top: 82%;
+	}
+}
